@@ -1,0 +1,10 @@
+init un projet : être dans le dossier à init avec le terminal => git init
+faire un commit : ajouter les fichier à commit => git add index.html css/style.css
+	git commit -m "Expliquation du commit"
+historique des commit : git log
+créer une branche : git branch nomDeLaBranche
+voir les branches : git branch
+changer de branche : git checkout nomDeLaBranche
+merge une branche : sur la branche où l'on veut merge (git checkout master)
+	git merge nomDeLaBrancheAmerge
+delete branche : git branch -d nomDeLaBrancheAsupp

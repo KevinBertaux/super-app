@@ -1,3 +1,4 @@
+/*Kevin*/
 dépôt local
 
 init un projet : être dans le dossier à init avec le terminal => git init
@@ -19,3 +20,49 @@ créer un repository sur GitHub
 récup l'URL du repository
 relier le dépôt distant au dépôt local : git remote add nomDeLaLiaison URLduRepo
 pousser sur le repo distant : git push nomDeLaLiaison nomDeLaBranchApush
+
+/***************************************************************************************************/
+
+/*Benoist*/
+Dépôt local
+
+
+Initialiser un projet
+- Être dans le dossier à initialiser avec le terminal
+- commande : git init
+
+Faire un commit
+- Ajouter le(s) fichier(s) à commiter : git add index.html css/style.css 
+- git commit -m "Message expliquant le commit"
+
+Voir l'historique des commit
+- git log
+
+Créer une branche
+- git branch nomDeLaNouvelleBranche
+
+Voir les branches et savoir sur laquelle on est
+- git branch
+
+Changer de branche
+- git checkout nomDeLaBranche
+
+Rapatrier une branche sur une autre 
+- se mettre sur la branche où l'on veut rapatrier ( git checkout brancheDeRapatriement )
+- git merge nomDeLaBrancheARapatrier
+
+Supprimer une branche 
+- git branch -d nomDeLaBrancheASupprimer
+
+
+
+Dépôt distant
+
+Créer un repository sur GitHub
+Récupérer l'url du repository 
+
+Relier le dépôt distant au dépôt local
+- git remote add nomDeLaLiaison url-du-repo (convention : on appelle généralement le remote : origin)
+
+Pousser sur le dépôt distant 
+- git push nomDeLaLiaison nomDeLaBrancheAPousser

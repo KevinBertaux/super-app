@@ -4,6 +4,56 @@
 	Modification	15/06/2021
 */
 
+/* Appel des polices */
+
+/* open-sans-regular - latin */
+
+@font-face {
+	font-display: swap;
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: local(''), url('../fonts/open-sans-v20-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+	url('../fonts/open-sans-v20-latin-regular.woff') format('woff');
+	/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* open-sans-italic - latin */
+
+@font-face {
+	font-display: swap;
+	font-family: 'Open Sans';
+	font-style: italic;
+	font-weight: 400;
+	src: local(''), url('../fonts/open-sans-v20-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+	url('../fonts/open-sans-v20-latin-italic.woff') format('woff');
+	/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* open-sans-600 - latin */
+
+@font-face {
+	font-display: swap;
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 600;
+	src: local(''), url('../fonts/open-sans-v20-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+	url('../fonts/open-sans-v20-latin-600.woff') format('woff');
+	/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* open-sans-700 - latin */
+
+@font-face {
+	font-display: swap;
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 700;
+	src: local(''), url('../fonts/open-sans-v20-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+	url('../fonts/open-sans-v20-latin-700.woff') format('woff');
+	/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 /* Set de couleurs */
 
 :root {
@@ -154,11 +204,10 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
 	max-width: 42rem;
 }
 
-@media screen and (min-width: 62em){
+@media screen and (min-width: 62em) {
 	.container-narrow {
 		max-width: 78rem;
 	}
-
 }
 
 .grid-cell-full-width {
@@ -322,7 +371,7 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
 	justify-content: space-between;
 }
 
-.cta-item{
+.cta-item {
 	margin-bottom: 1rem;
 }
 
@@ -330,7 +379,7 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
 	min-width: 11.2rem;
 }
 
-@media screen and (max-width: 36em){
+@media screen and (max-width: 36em) {
 	.cta-list {
 		flex-direction: column;
 		margin-bottom: 0;
@@ -411,10 +460,10 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
 }
 
 .member-item {
-	--gap : 3.2rem;
-    --nbCol: 1;
-    flex-basis: calc((100% - var(--gap) * (var(--nbCol) - 1)) / var(--nbCol));
-    margin-bottom: var(--gap);
+	--gap: 3.2rem;
+	--nbCol: 1;
+	flex-basis: calc((100% - var(--gap) * (var(--nbCol) - 1)) / var(--nbCol));
+	margin-bottom: var(--gap);
 }
 
 .member-img {
@@ -465,7 +514,7 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
 	justify-self: end;
 }
 
-@media screen and (min-width: 48em){
+@media screen and (min-width: 48em) {
 	.contact-form {
 		grid-template-columns: 1fr;
 	}

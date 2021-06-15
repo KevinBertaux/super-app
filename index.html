@@ -1,0 +1,202 @@
+<!--
+	Kevin BERTAUX - Supper App 2021
+	Création		10/06/2021
+	Modification	15/06/2021
+-->
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="images/favicon.png">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/helpers.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<title>SuperApp</title>
+</head>
+
+<body>
+	<header class="site-header">
+		<div class="container">
+			<div class="logo">
+				<img src="images/logo.png" alt="Logo de SuperApp">
+			</div>
+			<nav class="main-nav">
+				<button class="toggle-menu" aria-expanded="false" aria-controls="menu">Menu</button>
+				<ul id="menu" class="menu" role="list" hidden>
+					<li class="menu-item">
+						<a href="#about" class="menu-link">À propos</a>
+					</li>
+					<li class="menu-item">
+						<a href="#features" class="menu-link">Services</a>
+					</li>
+					<li class="menu-item">
+						<a href="#team" class="menu-link">L'équipe</a>
+					</li>
+					<li class="menu-item">
+						<a href="#site-footer" class="menu-link">Contact</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section class="hero" id="about">
+			<div class="container container-narrower">
+				<h1 class="main-title">Super App</h1>
+				<p class="baseline">L'application trop super&nbsp;!</p>
+				<hr class="separator">
+				<ul class="cta-list" role="list">
+					<li class="cta-item">
+						<a href="#" class="cta-link btn"><img src="images/thumbs-up.svg" alt="Un pouce en l'air">Like
+							it</a>
+					</li>
+					<li class="cta-item">
+						<a href="#" class="cta-link btn"><img src="images/heart-shape-silhouette.svg"
+								alt="Un coeur">Love it</a>
+					</li>
+					<li class="cta-item">
+						<a href="#" class="cta-link btn"><img src="images/shopping-cart-black-shape.svg"
+								alt="Un chariot de supermarché">Buy it</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="features" id="features">
+			<div class="container">
+				<h2 class="section-title">Elle fait des trucs supers&nbsp;!</h2>
+				<ul class="service-list" role="list">
+					<li class="service-item">
+						<figure class="service-figure">
+							<img src="images/fork-and-knife-silhouette.svg" alt="Une fourchette et un couteau"
+								class="service-img">
+						</figure>
+						<h3 class="service-title">Mettre la table</h3>
+						<p class="service-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus
+                            corporis beatae odit quaerat officiis perferendis!</p>
+					</li>
+					<li class="service-item">
+						<figure class="service-figure">
+							<img src="images/bed.svg" alt="Un lit" class="service-img">
+						</figure>
+						<h3 class="service-title">Faire le lit</h3>
+						<p class="service-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus
+                            corporis beatae odit quaerat officiis perferendis!</p>
+					</li>
+					<li class="service-item">
+						<figure class="service-figure">
+							<img src="images/fire-symbol.svg" alt="Un feu de bois" class="service-img">
+						</figure>
+						<h3 class="service-title">Allumer le feu</h3>
+						<p class="service-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus
+                            corporis beatae odit quaerat officiis perferendis!</p>
+					</li>
+					<li class="service-item">
+						<figure class="service-figure">
+							<img src="images/plant-leaf-with-white-details.svg" alt="Une feuille d'arbre"
+								class="service-img">
+						</figure>
+						<h3 class="service-title">Ramasser les feuilles</h3>
+						<p class="service-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus
+                            corporis beatae odit quaerat officiis perferendis!</p>
+					</li>
+					<li class="service-item">
+						<figure class="service-figure">
+							<img src="images/umbrella-black-silhouette.svg" alt="Un parapluie" class="service-img">
+						</figure>
+						<h3 class="service-title">Proéger de la pluie</h3>
+						<p class="service-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus
+                            corporis beatae odit quaerat officiis perferendis!</p>
+					</li>
+					<li class="service-item">
+						<figure class="service-figure">
+							<img src="images/dollar-symbol.svg" alt="Le symbole dollar" class="service-img">
+						</figure>
+						<h3 class="service-title">Vider votre compte</h3>
+						<p class="service-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus
+                            corporis beatae odit quaerat officiis perferendis!</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="team" id="team">
+			<header class="team-header">
+				<div class="container">
+					<h2 class="section-title h1-like">La super équipe à l’origine de SuperApp</h2>
+				</div>
+			</header>
+			<div class="container">
+				<ul class="member-list" role="list">
+					<li class="member-item">
+						<img src="images/avaone.jpg.png" srcset="images/avaone.jpg@2x.png 2x"
+							alt="Portrait de Tex Talign" class="member-img">
+						<h3 class="member-title">Tex Talign</h3>
+						<a href="mailto:" class="member-link btn btn-secondary"><img src="images/envelope.svg"
+								alt="Une envelope"> Lui
+							écrire</a>
+					</li>
+					<li class="member-item">
+						<img src="images/avatwo.jpg.png" srcset="images/avatwo.jpg@2x.png 2x"
+							alt="Portrait de Marge Inn" class="member-img">
+						<h3 class="member-title">Marge Inn</h3>
+						<a href="mailto:" class="member-link btn btn-secondary"><img src="images/envelope.svg"
+								alt="Une envelope"> Lui
+							écrire</a>
+					</li>
+					<li class="member-item">
+						<img src="images/avathree.jpg.png" srcset="images/avathree.jpg@2x.png 2x"
+							alt="Portrait de Isaac Newton" class="member-img">
+						<h3 class="member-title">Isaac Newton</h3>
+						<a href="mailto:" class="member-link btn btn-secondary"><img src="images/envelope.svg"
+								alt="Une envelope"> Lui
+							écrire</a>
+					</li>
+					<li class="member-item">
+						<img src="images/avafour.jpg.png" srcset="images/avafour.jpg@2x.png 2x"
+							alt="Portrait de Ash Tehemel" class="member-img">
+						<h3 class="member-title">Ash Tehemel</h3>
+						<a href="mailto:" class="member-link btn btn-secondary"><img src="images/envelope.svg"
+								alt="Une envelope"> Lui écrire</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer" id="site-footer">
+		<div class="container container-narrow">
+			<h2 class="section-title">Envoyez-nous un message</h2>
+			<form class="contact-form">
+				<div class="form-group">
+					<label for="name">Votre nom</label>
+					<input type="text" id="name" required>
+				</div>
+				<div class="form-group">
+					<label for="email">Votre email</label>
+					<input type="email" id="email" required>
+				</div>
+				<div class="form-group grid-cell-full-width">
+					<label for="msg">Votre message</label>
+					<textarea name="msg" id="msg" required></textarea>
+				</div>
+				<button class="btn btn-tertiary grid-cell-full-width">
+					<img src="images/paper-plane.svg" alt="">
+					Envoyer</button>
+			</form>
+		</div>
+	</footer>
+
+	<script src="js/burger-menu.js"></script>
+
+</body>
+
+</html>

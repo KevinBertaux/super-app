@@ -1,3 +1,5 @@
+dépôt local
+
 init un projet : être dans le dossier à init avec le terminal => git init
 faire un commit : ajouter les fichier à commit => git add index.html css/style.css
 	git commit -m "Expliquation du commit"
@@ -8,3 +10,12 @@ changer de branche : git checkout nomDeLaBranche
 merge une branche : sur la branche où l'on veut merge (git checkout master)
 	git merge nomDeLaBrancheAmerge
 delete branche : git branch -d nomDeLaBrancheAsupp
+
+
+
+dépôt distant
+
+créer un repository sur GitHub
+récup l'URL du repository
+relier le dépôt distant au dépôt local : git remote add nomDeLaLiaison URLduRepo
+pousser sur le repo distant : git push nomDeLaLiaison nomDeLaBranchApush

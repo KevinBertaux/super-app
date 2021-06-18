@@ -1,7 +1,7 @@
 /*
 	Kevin BERTAUX - Supper App 2021
 	Création		10/06/2021
-	Modification	15/06/2021
+	Modification	18/06/2021
 */
 
 /* Appel des polices */
@@ -353,7 +353,7 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
 	text-align: center;
 	background-color: var(--text);
 	background-position: center;
-	background-image: url(../images/about.jpg.png);
+	background-image: url(../img/about.png);
 	background-size: cover;
 }
 
@@ -400,6 +400,20 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
 	gap: 3.2rem;
 }
 
+@media screen and (min-width: 36em) {
+	/* 576px */
+	.service-list {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (min-width: 62em) {
+	/* 992px */
+	.service-list {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
 .service-item :last-child {
 	margin-bottom: 0;
 }
@@ -416,20 +430,6 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
 	background-color: var(--accent);
 }
 
-@media screen and (min-width: 36em) {
-	/* 576px */
-	.service-list {
-		grid-template-columns: repeat(2, 1fr);
-	}
-}
-
-@media screen and (min-width: 62em) {
-	/* 992px */
-	.service-list {
-		grid-template-columns: repeat(3, 1fr);
-	}
-}
-
 /* Team */
 
 .team {
@@ -439,9 +439,9 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
 .team-header {
 	display: flex;
 	align-items: center;
-	padding-top: 9.1rem;
-	padding-bottom: 9.1rem;
-	background-image: url(../images/team.jpg.png);
+	padding-top: 8.9rem;
+	padding-bottom: 8.9rem;
+	background-image: url(../img/team.png);
 	background-size: cover;
 }
 
@@ -466,6 +466,20 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
 	margin-bottom: var(--gap);
 }
 
+@media screen and (min-width: 48em) {
+	/* 768px */
+	.member-item {
+		--nbCol: 2;
+	}
+}
+
+@media screen and (min-width: 75em) {
+	/* 1200px */
+	.member-item {
+		--nbCol: 4;
+	}
+}
+
 .member-img {
 	width: 24rem;
 	height: 24rem;
@@ -481,18 +495,6 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
 	margin-bottom: 1em;
 }
 
-@media screen and (min-width: 48em) {
-	.member-item {
-		--nbCol: 2;
-	}
-}
-
-@media screen and (min-width: 75em) {
-	.member-item {
-		--nbCol: 3;
-	}
-}
-
 /* Footer */
 
 .site-footer {
@@ -505,17 +507,33 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
 
 .contact-form {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: 1fr;
 	gap: 2rem 3.2rem;
 	text-align: left;
+}
+
+@media screen and (min-width: 48em) {
+	/* 768px */
+	.contact-form {
+		grid-template-columns: repeat(2, 1fr);
+	}
 }
 
 .contact-form :last-child {
 	justify-self: end;
 }
 
-@media screen and (min-width: 48em) {
-	.contact-form {
-		grid-template-columns: 1fr;
-	}
+.copyright {
+	margin: 0;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+.copyright a, .copyright a:visited {
+	color: var(--inverted);
+	text-decoration: none;
+}
+
+.copyright a:hover, .copyright a:focus {
+text-decoration: underline;
 }

@@ -1,9 +1,3 @@
-/*
-	Kevin BERTAUX - Supper App 2021
-	Création		10/06/2021
-	Modification	18/06/2021
-*/
-
 /* Appel des polices */
 
 /* open-sans-regular - latin */
@@ -535,5 +529,5 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
 }
 
 .copyright a:hover, .copyright a:focus {
-text-decoration: underline;
+	text-decoration: underline;
 }
